@@ -1,0 +1,67 @@
+Micro Service Architecture 101
+
+22 Feb 2019
+
+David Xiao
+software engineer
+
+* What Traditional architecture looks like
+.image monolithic-architecture.jpg 500 800
+
+* So, what are problems:
+- bullets
+- more bullets
+- a bullet with
+
+* Break into small pieces 
+- 
+- 
+.image mononithic2microservice.png 300 500
+
+* What is Micro Service(Traditional)
+.image ./micro-architecture.png
+
+* Key features
+Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services that are
+
+- Organized around business capabilities
+- Loosely coupled
+- Highly maintainable and testable
+- Independently deployable
+
+* Why Micro Service
+
+- bullets
+- more bullets
+- a bullet with
+
+* Why NOT Micro Service
+
+- bullets
+- more bullets
+- a bullet with
+
+* What we expect
+- bullets
+- more bullets
+- a bullet with
+
+* How to design Micro Service Architecture
+- bullets
+- more bullets
+- a bullet with
+
+* Approaches
+- bullets
+- more bullets
+- a bullet with
+
+* Key components available now
+- bullets
+- more bullets
+- a bullet with
+
+* Service Implementation
+- bullets
+- more bullets
+- a bullet with
