@@ -1,0 +1,230 @@
+Micro Service Architecture 101
+
+6 March 2019
+
+David Xiao
+software engineer
+
+* Agenda
+- What is monolithic
+- What is micro service
+- Why micro service and why NOT micro service
+- How to decompose
+- How to integrate
+- How to develop service
+
+* What is monolithic architecture
+developed and deployed as a single unit
+.image ./images/monolithic-1.png 300 800
+
+* What are good?
+- Development, at initial phase,
+- Debug and test, all test cases are covered in one server
+- Deployment, one executable file
+- Scale(but vertical, coarse grained)
+
+* What pain points?
+- Agility, hard to adopt new business changes or technology changes
+- CI/CD, long time release process
+- Hard to understand large source code base
+- Scale(while horizontal, finer grained)
+- Big team
+
+* What is Micro Service(One of)
+A distinctive method of developing software systems that tries to focus on building single-function modules
+.image ./images/micro-1.png 300 800
+
+* What are good?
+- Agility
+- CI/CD, independent
+- Loosely coupled
+- Scale(fine grained, horizontal)
+- Quick start
+- Small team
+
+* What pain points
+Micro service is not sliver bullet
+- Complexity
+- Monitoring
+- Debug and test
+- DevOps
+
+* Why NOT microservice 
+Am I big/complex enough?
+.image ./images/big.jpg 400 _
+
+* How to decompose?
+Guideline
+
+- Single Responibility Principle
+- Common Closure Principle
+.image ./images/swiss-knife.jpg 
+
+* How to decompose(C)?
+DDD - Domain Driven Design
+.image ./images/ddd-strategic.png 400 _
+
+* How to decompose(C)?
+DDD - Domain Driven Design
+.image ./images/ddd-tactical.png 400 _
+
+* How to integrate?
+Docker
+Kubernetes
+South/North
+East/West
+Monitoring
+.image ./images/combine.png 360 _
+
+* Docker
+Standardized Units for Development, Shipment and Deployment
+.image ./images/docker1.png 400 _
+
+* Kubernetes
+De facto Docker orchestration tool
+.image ./images/k8s.png 400 _
+
+* How to integrate(C)
+Data scattered
+How to view the data across the services in a right way?
+.image ./images/cap.png
+
+* How to integrate(C)
+Are API Gateways OK?
+.image ./images/apigateway-1.png 400 _
+
+* How to integrate(C)
+South/North
+API Gateway or Backend for frontend?
+.image ./images/bffe.png 360 _
+
+* How to integrate(C)
+South/North
+REST or GraphQL?
+.image ./images/rest-graphql.png _ 660
+
+* How to integrate(C)
+East/West
+Async(Event), Sync(REST, or Grpc)?
+.image ./images/whichway.jpeg 360 _
+
+* How to integrate(C)
+Async - Event
+Event Sourcing
+.image ./images/async-event.png 400 _
+
+* How to integrate(C)
+Async - Event
+Event Sourcing
+What table looks like
+.image ./images/table.jpg 300 _
+
+* How to integrate(C)
+Async - Event
+CQRS
+.image ./images/async-crqs.png 400 600
+
+* How to integrate(C)
+Async - Event
+Data consistency? 2PC
+.image ./images/2pc.png 360 _
+
+* How to integrate(C)
+Async - Event
+Data consistency? Events/Choreography
+.image ./images/saga-1.png 400 _
+
+* How to integrate(C)
+Async - Event
+Data consistency? Command/Orchestration
+.image ./images/saga-2.png 400 _
+
+* How to integrate(C)
+Sync - REST, GRPC
+Service Discovery
+Load Balance
+Secure communication between services
+Fault Injection
+Circuit Breaker
+Canary Release
+
+* How to integrate(C)
+Sync - REST, GRPC
+.image ./images/grpc-rest.png 300 500
+
+* How to integrate(C)
+Sync - REST, GRPC
+Service Discovery
+Load Balance
+.image ./images/service-discovery.png 300 _
+
+* How to integrate(C)
+Sync - REST, GRPC
+Secure communication between services
+
+* How to integrate(C)
+Sync - REST, GRPC
+Circuit Breaker
+.image ./images/circuit-breaker.png 400 _
+
+* How to integrate(C)
+Sync - REST, GRPC
+Fault Injection
+.image ./images/fault-injection.jpg 300 _
+
+* How to integrate(C)
+Sync - REST, GRPC
+Canary Release
+.image ./images/canary.png 400 _
+
+* How to integrate(C)
+Logging - ELK
+Metrix -  prometheus/grafana
+Tracing - jaeger
+.image ./images/Jaeger.png 300 _
+
+* How to integrate(C)
+Service Mesh(Istio)
+.image ./images/istio.png 400 _
+
+* How to develop service
+- Independent of Frameworks
+- Testable
+- Independent of UI
+- Independent of Database
+
+* How to develop service(C) 
+MVC
+.image ./images/mvc.png 400 _
+
+* How to develop service(C) 
+Onion
+.image ./images/onion.png 400 _
+
+* How to develop service(C) 
+Hexagonal
+.image ./images/hexagonal.gif 400 _
+
+* How to develop service(C) 
+Clear Architecture
+.image images/CleanArchitecture.jpg 500 _
+
+* How to develop service(C)
+- Domain Model
+- Use Cases
+- Interface
+- Framework
+
+* How to develop service(C)
+DDD - Domain Driven Design
+- Entity
+- Value Object
+- Aggregate
+- Repository
+- Service
+
+* Final notes:
+- Almost all the cases where I’ve heard of a system that was built as a microservice system from scratch, it has ended up in serious trouble.
+- Almost all the successful microservice stories have started with a monolith that got too big and was broken up.
+
+.link https://martinfowler.com _Martin_Fowler_ 
