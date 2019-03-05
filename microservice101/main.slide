@@ -204,12 +204,12 @@ MVC
 .image ./images/mvc.png 400 _
 
 * How to develop service(C) 
-Onion
-.image ./images/onion.png 400 _
-
-* How to develop service(C) 
 Hexagonal
 .image ./images/hexagonal.gif 400 _
+
+* How to develop service(C) 
+Onion
+.image ./images/onion.png 400 _
 
 * How to develop service(C) 
 Clear Architecture
@@ -219,15 +219,15 @@ Clear Architecture
 - Domain Model
 - Use Cases
 - Interface
-- Framework
+- Infrastructure
 
 * How to develop service(C)
 DDD - Domain Driven Design
 - Entity
 - Value Object
-- Aggregate
-- Repository
 - Service
+- Repository
+- Aggregate
 
 * Final notes:
 - Almost all the cases where I’ve heard of a system that was built as a microservice system from scratch, it has ended up in serious trouble.
