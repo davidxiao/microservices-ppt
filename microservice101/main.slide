@@ -127,7 +127,7 @@ CQRS
 * How to integrate(C)
 Async - Event
 Data consistency? 2PC
-.image ./images/2pc.png 360 _
+.image ./images/2pc.png 300 _
 
 * How to integrate(C)
 Async - Event
@@ -146,6 +146,7 @@ Load Balance
 Secure communication between services
 Fault Injection
 Circuit Breaker
+Blue/green deployment
 Canary Release
 
 * How to integrate(C)
@@ -171,6 +172,11 @@ Circuit Breaker
 Sync - REST, GRPC
 Fault Injection
 .image ./images/fault-injection.jpg 300 _
+
+* How to integrate(C)
+Sync - REST, GRPC
+Blue/Green deployment
+.image ./images/blue-green.png 400 _
 
 * How to integrate(C)
 Sync - REST, GRPC
