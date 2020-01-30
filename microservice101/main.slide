@@ -71,8 +71,8 @@ DDD - Domain Driven Design
 * How to integrate?
 Docker
 Kubernetes
-South/North
-East/West
+South/North(client with services)
+East/West(within services)
 Monitoring
 .image ./images/combine.png 360 _
 
@@ -94,17 +94,17 @@ Are API Gateways OK?
 .image ./images/apigateway-1.png 400 _
 
 * How to integrate(C)
-South/North(client with services)
+South/North
 API Gateway or Backend for frontend?
 .image ./images/bffe.png 360 _
 
 * How to integrate(C)
-South/North(client with services)
+South/North
 REST or GraphQL?
 .image ./images/rest-graphql.png _ 660
 
 * How to integrate(C)
-East/West(within services)
+East/West
 Async(Event), Sync(REST, or Grpc)?
 .image ./images/whichway.jpeg 360 _
 
