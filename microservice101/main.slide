@@ -94,17 +94,17 @@ Are API Gateways OK?
 .image ./images/apigateway-1.png 400 _
 
 * How to integrate(C)
-South/North
+South/North(client with services)
 API Gateway or Backend for frontend?
 .image ./images/bffe.png 360 _
 
 * How to integrate(C)
-South/North
+South/North(client with services)
 REST or GraphQL?
 .image ./images/rest-graphql.png _ 660
 
 * How to integrate(C)
-East/West
+East/West(within services)
 Async(Event), Sync(REST, or Grpc)?
 .image ./images/whichway.jpeg 360 _
 
